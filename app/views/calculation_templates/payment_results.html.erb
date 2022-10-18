@@ -1,0 +1,14 @@
+<h1>Payment Results</h1>
+<dl>
+  <dt>APR</dt>
+  <dd><%= number_to_percentage(params.fetch("apr").to_f, :precision=>4) %></dd>
+
+  <dt>Number of years</dt>
+  <dd><%= @num_years.round(0) %></dd>
+
+  <dt>Principal</dt>
+  <dd><%= @principal.round(2) %></dd>
+
+    <dt>Payment</dt>
+  <dd><%= @monthly %></dd>
+</dl>
